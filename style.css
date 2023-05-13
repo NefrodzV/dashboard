@@ -170,5 +170,7 @@ img {
 
 .main {
     background-color: var(--secondary-color);
-    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
+
