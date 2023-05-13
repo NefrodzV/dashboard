@@ -172,5 +172,36 @@ img {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 1rem;
 }
+
+h3 {
+    margin-block: 0;
+}
+
+.main>.projects {
+    padding: 2% 0 5% 2%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+.card {
+    height: auto;
+    border-left: 10px solid var(--accent-color);
+    padding: 3%;
+    background-color: var(--color-primary);
+}
+
+.title {
+    font-weight: bolder;
+    font-size: large;
+}
+
+
 
