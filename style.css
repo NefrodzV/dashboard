@@ -36,7 +36,7 @@ label[for="search"]{
     background-color: var(--accent-color);
 }
 
-img {
+shadow {
     box-shadow:0px 3px 3px  black;
 }
 
@@ -119,6 +119,10 @@ img {
     box-shadow:0px 3px 3px  black;
 }
 
+.buttons-container>button:hover {
+    background-color: var(--secondary-color);
+}
+
 .sidebar {
     grid-row: 1 / 4;
     display: grid;
@@ -180,7 +184,7 @@ h3 {
 }
 
 .main>.projects {
-    padding: 2% 0 5% 2%;
+    padding: 2% 0 15% 2%;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 1rem;
@@ -188,15 +192,27 @@ h3 {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 .card {
+    box-shadow: 1px 1px 2px black;
     height: auto;
     border-left: 10px solid var(--accent-color);
     padding: 3%;
     background-color: var(--color-primary);
 }
+
+.card>div {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+.card>div>img {
+    cursor: pointer;
+    width: 30px;
+}
+
 
 .title {
     font-weight: bolder;
