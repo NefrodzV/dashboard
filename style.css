@@ -167,7 +167,7 @@ shadow {
 }
 
 .sidebar>ul>li>a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
@@ -212,7 +212,6 @@ h3 {
     cursor: pointer;
     width: 30px;
 }
-
 
 .title {
     font-weight: bolder;
