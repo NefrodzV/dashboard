@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+:root{
+    --color-primary:hsl(0, 60%, 100%);
+    --secondary-color:hsl(176, 5%, 80%);
+    --accent-color:hsl(200, 100%, 65%);
+    --font:'Ysabeau', sans-serif;
+}
 body {
+    background-color: var(--color-primary);
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -6,7 +15,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: .5fr 1fr 5fr;
-    gap: 16px;
 }
 label{
     justify-self: end;
@@ -28,23 +36,27 @@ img{
     padding: 5px;
 }
 
-.header, .sidebar, .navbar, .main {
-    background-color: red;
+.header,.navbar {
+    background-color: var(--accent-color);
+}
+
+.sidebar {
+    background-color: var(--secondary-color);
 }
 
 .header {
-    padding: 25px;
+    padding:1rem;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: .2fr 3fr .2fr .2fr .5fr;
     align-items: center;
-    gap: 16px;
-    
+    gap: 1rem;
 }
 
 .sidebar {
     grid-row: 1 / 4;
 }
+
 #search {
     height:50px;
     width: 50%;
