@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
 :root{
     --color-primary:hsl(0, 60%, 100%);
-    --secondary-color:hsl(176, 5%, 80%);
-    --accent-color:hsl(200, 100%, 65%);
+    --secondary-color:hsl(180, 100%, 95%);
+    --accent-color:hsl(170, 100%, 65%);
     --font:'Ysabeau', sans-serif;
 }
 body {
@@ -16,10 +16,10 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: .5fr 1fr 5fr;
 }
-label{
-    justify-self: end;
+label[for="search"]{
+    justify-self: center;
     display: inline-block;
-    width: 50px;
+    width: 2rem;
 }
 
 svg {
@@ -33,14 +33,18 @@ object {
 img{
     background: gray;
     border-radius: 50px;
-    padding: 5px;
+    
 }
 
-.header,.navbar {
-    background-color: var(--accent-color);
+.header, .navbar {
+    background-color: var(--color-primary);
 }
 
 .sidebar {
+    background-color: var(--accent-color);
+}
+
+.main {
     background-color: var(--secondary-color);
 }
 
@@ -48,18 +52,23 @@ img{
     padding:1rem;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: .2fr 3fr .2fr .2fr .5fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, .5fr);
     align-items: center;
     gap: 1rem;
 }
 
-.sidebar {
-    grid-row: 1 / 4;
+.search-container {
+    display: grid;
+    grid-template-columns: .1fr 1fr;
 }
-
 #search {
-    height:50px;
-    width: 50%;
+    height:2.5rem;
+    width: auto;
+}
+.user-container {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
 }
 #notifications{
     width: 50px;
@@ -67,3 +76,12 @@ img{
     border: none;
     background-color: rgba(0,0,0,0);
 }
+.sidebar {
+    grid-row: 1 / 4;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
