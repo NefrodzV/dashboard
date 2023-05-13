@@ -10,17 +10,32 @@
 </head>
 <body>
     <div class="header">
-        <label>
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg width="50" height="50" version="1.1" viewBox="0 0 50.000001 50.000001" xmlns="http://www.w3.org/2000/svg">
-            <rect width="50" height="50" fill-opacity="0"/>
-            <path d="m18.623 4.2559c-7.9132 0-14.367 6.454-14.367 14.367 0 7.9132 6.454 14.367 14.367 14.367 3.2414 0 6.2283-1.0954 8.6367-2.918a2.0002 2.0002 0 0 0 0.15039 0.16602l14.898 14.898a2.0002 2.0002 0 1 0 2.8281 -2.8281l-14.898-14.898a2.0002 2.0002 0 0 0 -0.16602 -0.15039c1.8225-2.4084 2.918-5.3953 2.918-8.6367 0-7.9132-6.454-14.367-14.367-14.367zm0 3.5898c5.9732 0 10.777 4.8042 10.777 10.777 0 5.9732-4.8042 10.777-10.777 10.777s-10.777-4.8042-10.777-10.777c2e-7 -5.9732 4.8042-10.777 10.777-10.777z" color="#000000" color-rendering="auto" fill="#555" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="block-progression:tb;isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal"/>
-            </svg>
-        </label>
-        <input  id="search" type="text"> 
-        <button><object data="/icons/notification.svg" width="25px"></object></button>
-        <img src="/icons/user-profile.png" width="50px" height="50px" alt="user profile image">
-        <h3>Olivia Rodriguez</h3>
+        <div class="search-container">
+            <label for="search">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="50" height="50" version="1.1" viewBox="0 0 50.000001 50.000001" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" fill-opacity="0"/>
+                <path d="m18.623 4.2559c-7.9132 0-14.367 6.454-14.367 14.367 0 7.9132 6.454 14.367 14.367 14.367 3.2414 0 6.2283-1.0954 8.6367-2.918a2.0002 2.0002 0 0 0 0.15039 0.16602l14.898 14.898a2.0002 2.0002 0 1 0 2.8281 -2.8281l-14.898-14.898a2.0002 2.0002 0 0 0 -0.16602 -0.15039c1.8225-2.4084 2.918-5.3953 2.918-8.6367 0-7.9132-6.454-14.367-14.367-14.367zm0 3.5898c5.9732 0 10.777 4.8042 10.777 10.777 0 5.9732-4.8042 10.777-10.777 10.777s-10.777-4.8042-10.777-10.777c2e-7 -5.9732 4.8042-10.777 10.777-10.777z" color="#000000" color-rendering="auto" fill="#555" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="block-progression:tb;isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal"/>
+                </svg>
+            </label>
+            <input  id="search" type="text"> 
+            
+        </div>
+        <div class="user-container">
+            <button id="notifications"></button>
+            <img src="images/thug_cat.jpg" width="48px" height="48px" alt="user profile image">
+            <h3>Olivia Rodriguez</h3> 
+        </div>
+        <div class="message-container">
+            <img  src="/icons/user-profile.png" alt="user_profile-picture" width="100px" height="100px">
+            <p>Hi there,</p>
+            <p>Cool Cat</p>
+        </div>
+        <div class="buttons-container">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
     <div class="sidebar">
         <div class="logo"><h1>Logo</h1></div>
@@ -38,19 +53,6 @@
             <li></li>
         </ul>
     </div>
-    
-<div class="navbar">
-    <div>
-        <img src="" alt="">
-        <h6></h6>
-        <h2></h2>
-    </div>
-    <div>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
-    </div>
-</div>    
 <div class="main">
     <div class="projects">
         <h3>Your projects</h3>
