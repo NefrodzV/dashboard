@@ -263,9 +263,11 @@ shadow {
 }
 
 .trending-users>li:nth-child(-n+3) {
-    padding-bottom: 5%;
-    border-bottom:  1px solid lightgray;
-    
+    padding-bottom: 3%;
+}
+.trending-users>li>div>p:first-child{
+    color: black;
+    font-weight: bolder;
 }
 .trending-users>li>div>p{
     color: gray;
